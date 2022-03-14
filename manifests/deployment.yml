@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: knmnwordpressyaml 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: knmnwordpressyaml
+  template:
+    metadata:
+      labels:
+        app: knmnwordpressyaml 
+    spec:
+      containers:
+        - name: knmnwordpressyaml 
+          image: kingsregistery.azurecr.io/knmnwordpressyaml
+          ports:
+          - containerPort: 80
