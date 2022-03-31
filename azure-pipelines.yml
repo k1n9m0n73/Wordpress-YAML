@@ -1,5 +1,5 @@
 # Deploy to Azure Kubernetes Service
-- task: DockerCompose@0
+- task: DockerCompose
   inputs:
     containerregistrytype: 'Azure Container Registry'
     azureSubscription: 'Visual Studio Enterprise Subscription (90b50889-ca8a-474a-b5b6-601276d13251)'
